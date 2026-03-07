@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col justify-between px-6 py-10">
+    <main className="min-h-[100dvh] flex flex-col justify-between px-6 py-10">
 
       {/* Center Content */}
       <div className="flex flex-1 items-start md:items-center justify-center">
@@ -58,7 +58,7 @@ function App() {
           </p>
 
           <p className="text-xs md:text-lg paragraph">
-            Projects section coming soon...
+            Projects section coming soon.
           </p>
 
         </div>
