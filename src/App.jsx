@@ -15,7 +15,7 @@ function App() {
     <main className="min-h-screen flex flex-col justify-between px-6 py-10">
 
       {/* Center Content */}
-      <div className="flex flex-1 items-center justify-center">
+      <div className="flex flex-1 items-start md:items-center justify-center">
         <div className="max-w-xl">
 
           <div className="flex items-center gap-4 mb-10 select-none cursor-default">
@@ -58,7 +58,7 @@ function App() {
           </p>
 
           <p className="text-xs md:text-lg paragraph">
-            Projects section coming soon..
+            Projects section coming soon...
           </p>
 
         </div>

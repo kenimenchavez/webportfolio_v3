@@ -75,12 +75,23 @@ body.light h1 {
 }
 
 .paragraph {
-  --tw-leading: calc(var(--spacing) * 7);
-  line-height: calc(var(--spacing) * 7);
+  --tw-leading: calc(var(--spacing) * 5);
+  line-height: calc(var(--spacing) * 5);
 
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
 
-  --tw-tracking: -0.1px;
-  letter-spacing: -0.1px;
+  --tw-tracking: -0.05px;
+  letter-spacing: -0.05px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .paragraph {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+
+    --tw-tracking: -0.1px;
+    letter-spacing: -0.1px;
+  }
 }
