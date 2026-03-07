@@ -20,10 +20,10 @@ function App() {
 
           <div className="flex items-center gap-4 mb-10 select-none cursor-default">
             <img
-              src="/hey.png"
+              src="/hey2.jpg"
               alt="Photo of Keni Menchavez"
               draggable="false"
-              className="w-[52px] h-[52px] rounded-full object-cover object-[center_1%] pointer-events-none"
+              className="w-[52px] h-[52px] rounded-full object-cover object-[center_35%] pointer-events-none"
             />
 
             <div>
@@ -50,7 +50,7 @@ function App() {
             problems.
           </p>
 
-          <p className="text-xs md:text-lg paragraph mb-10">
+          <p className="text-xs md:text-lg paragraph mb-5">
             For collaborations, reach at{" "}
             <a href="mailto:kenimenchavez@gmail.com">
               kenimenchavez@gmail.com
