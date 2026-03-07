@@ -58,7 +58,7 @@ function App() {
           </p>
 
           <p className="text-xs md:text-lg paragraph">
-            Projects section coming soon.
+            Projects section coming soon..
           </p>
 
         </div>
