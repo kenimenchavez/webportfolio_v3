@@ -1,60 +1,34 @@
-# Keni Menchavez Portfolio
+# Keni Menchavez
 
-Personal portfolio website of **Keni Menchavez**, showcasing my background, experience, and journey toward becoming a **Solutions Architect**.
+This repository contains the source code for my personal portfolio website.
 
-This site highlights my experience implementing SaaS platforms, managing integrations, and translating business requirements into working systems.
+The site introduces who I am, what I do, and the direction I'm growing in as a developer.
 
----
-
-## 🌐 Live Website
+## Website
 
 https://kenimenchavez.com
 
----
+## About
 
-## 👨‍💻 About
+I currently work as a **SaaS Specialist**, helping implement platforms and integrations and turning business requirements into working systems.
 
-I currently work as a **SaaS Specialist**, focusing on platform implementations and integrations. I enjoy understanding how systems connect and simplifying complex processes through technology.
+I'm continuing to build my skills in development, automation, and system design as I work toward becoming a **Solutions Architect**.
 
-I am currently expanding my skills in:
+## Tech
 
-- Web development  
-- Automation  
-- System design  
-- Scalable architecture  
+This portfolio is built with:
 
-with the goal of growing into a **Solutions Architect** role.
+- React
+- Vite
+- Tailwind CSS
 
----
+## Status
 
-## 🛠 Tech Stack
+The projects section is still being built and will be added soon.
 
-- React  
-- Vite  
-- Tailwind CSS  
-- JavaScript  
+## Running locally
 
----
-
-## ✨ Features
-
-- Minimalist portfolio design  
-- Light / Dark mode toggle  
-- Responsive layout  
-- Custom typography with Inter  
-- Email contact link  
-
----
-
-## 🚧 Status
-
-Projects section coming soon.
-
----
-
-## ⚙️ Development
-
-To run locally:
+If you'd like to run the site locally:
 
 ```bash
 npm install
