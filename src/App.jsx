@@ -27,22 +27,22 @@ function App() {
             />
 
             <div>
-              <h1 className="text-lg tracking-tight leading-none mb-1">
+              <h1 className="text-xs md:text-lg tracking-tight leading-none mb-1">
                 Keni Menchavez
               </h1>
 
-              <h2 className="text-lg tracking-tight">
+              <h2 className="text-xs md:text-lg tracking-tight">
                 SaaS Specialist
               </h2>
             </div>
           </div>
 
-          <p className="text-lg paragraph mb-5">
+          <p className="text-xs md:text-lg paragraph mb-5">
             Experienced in implementing platforms and integrations,
             translating business requirements into working systems.
           </p>
 
-          <p className="text-lg paragraph mb-5">
+          <p className="text-xs md:text-lg paragraph mb-5">
             Currently continuing to build my skills in development,
             automation, and system design, with the goal of growing into a{" "}
             <span className="highlight">Solutions Architect</span>{" "}
@@ -50,21 +50,21 @@ function App() {
             problems.
           </p>
 
-          <p className="text-lg paragraph mb-10">
+          <p className="text-xs md:text-lg paragraph mb-10">
             For collaborations, reach at{" "}
             <a href="mailto:kenimenchavez@gmail.com">
               kenimenchavez@gmail.com
             </a>
           </p>
 
-          <p className="text-lg paragraph">
+          <p className="text-xs md:text-lg paragraph">
             Projects section coming soon.
           </p>
 
         </div>
       </div>
 
-      <footer className="w-full max-w-xl mx-auto flex items-center justify-between text-sm mt-10">
+      <footer className="w-full max-w-xl mx-auto flex items-center justify-between text-xs md:text-sm mt-10">
         <span>© 2026 Keni</span>
 
         <button onClick={toggleTheme}>
