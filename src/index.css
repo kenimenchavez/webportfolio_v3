@@ -464,7 +464,7 @@ body.light .chat-input button {
   .chat-modal {
     height: 100dvh;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .chat-container {
