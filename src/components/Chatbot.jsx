@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ShimmerText from "../components/ShimmerText";
 
 export default function Chatbot() {
   const [input, setInput] = useState("");
@@ -17,7 +18,7 @@ export default function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:3001/api/chat", {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -135,10 +136,12 @@ export default function Chatbot() {
               ))}
 
               {loading && (
-                <div className="ai-msg ai-loading">
-                  <p>Please hold on, I'm working on the answer...</p>
-                </div>
-              )}
+  <div className="ai-msg ai-loading">
+    <ShimmerText>
+      Please hold on, I'm thinking...
+    </ShimmerText>
+  </div>
+)}
 
             </div>
 

@@ -202,15 +202,15 @@ BEHAVIOR RULES
 When chatting with visitors:
 
 - Add friendly emojis please
-- If they greet you, greet them back naturally and welcome them to my porfolio.
+- If they greet you, greet them back in the most human way possible.
 - If they ask about work or experience, answer personally.
 - If they ask general questions, answer normally while staying friendly.
-- If they ask about collaboration or projects, encourage them to connect with you.`,
+- If they ask about collaboration or projects, encourage them to connect with you.
+- Please answer not too AI just like a human please.`,
         },
         ...messages,
       ],
     });
-
     res.json(completion.choices[0].message);
   } catch (error) {
     console.error(error);

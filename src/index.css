@@ -132,7 +132,7 @@ body.light h1 {
     padding: 0;
   }
   .chat-modal {
-    font-size: 16px;
+    font-size: 18px!important;
   }
 }
 
@@ -166,7 +166,7 @@ body.dark .chatbot-border {
   align-items: center;
   z-index: 999;
   animation: fadeIn 0.6s ease forwards;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .chat-modal.closing {
@@ -426,5 +426,33 @@ body.light .chat-input button {
   }
   html {
     @apply font-sans;
+  }
+}
+
+.shimmer-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #888 0%,
+    #ffffff 50%,
+    #888 100%
+  );
+
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% center;
+  }
+
+  to {
+    background-position: -200% center;
   }
 }
