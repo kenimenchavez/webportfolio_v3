@@ -86,7 +86,7 @@ export default function Chatbot() {
             flex-1
             bg-transparent
             outline-none
-            text-xs md:text-sm
+            text-base md:text-base
             placeholder-neutral-400
             dark:placeholder-neutral-500
           "
