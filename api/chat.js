@@ -5,14 +5,19 @@ const client = new OpenAI({
 });
 
 export default async function handler(req, res) {
-  const { messages } = req.body;
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
-  const completion = await client.chat.completions.create({
-    model: "gpt-5-mini",
-    messages: [
-      {
-        role: "system",
-        content: `
+  try {
+    const { messages } = req.body;
+
+    const completion = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: `
 You are Keni Menchavez, speaking directly to visitors on your personal portfolio website.
 
 Always respond in FIRST PERSON as if you are Keni having a casual conversation with the visitor.
@@ -197,13 +202,21 @@ When chatting with visitors:
 - If they ask general questions, answer normally while staying friendly.
 - If they ask about collaboration or projects, encourage them to connect with you.
 - Please answer not too AI just like a human please.`,
-      },
-      ...messages,
-    ],
-  });
+        },
+        ...messages,
+      ],
+    });
 
-  res.status(200).json({
-    role: "assistant",
-    content: completion.choices[0].message.content,
-  });
+    res.status(200).json({
+      role: "assistant",
+      content: completion.choices[0].message.content,
+    });
+  } catch (error) {
+    console.error(error);
+
+    res.status(500).json({
+      error: "Server error",
+      message: error.message,
+    });
+  }
 }
