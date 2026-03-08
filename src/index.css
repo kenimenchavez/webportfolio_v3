@@ -462,11 +462,18 @@ body.light .chat-input button {
 @media (max-width: 768px) {
 
   .chat-modal {
-    height: 90dvh;
+    height: 100dvh;
+    align-items: flex-start;
+    padding-top: 40px;
   }
 
   .chat-container {
-    height: 90dvh;
+    height: 100%;
+    max-height: 100dvh;
+  }
+
+  .chat-messages {
+    min-height: 0;
   }
 
 }
