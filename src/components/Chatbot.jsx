@@ -86,7 +86,7 @@ export default function Chatbot() {
             flex-1
             bg-transparent
             outline-none
-            text-base md:text-base
+            text-base
             placeholder-neutral-400
             dark:placeholder-neutral-500
           "
@@ -145,21 +145,48 @@ export default function Chatbot() {
 
             </div>
 
-            <div className="chat-input">
+<div
+  className="
+  chatbot-border
+  flex items-center
+  rounded-xl
+  px-5 py-4
+  border
+  bg-dark
+"
+>
 
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Ask something..."
-              />
+  <input
+    type="text"
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={handleKeyDown}
+    placeholder="Ask something..."
+    className="
+    chatbot
+    flex-1
+    bg-transparent
+    outline-none
+    text-base
+    placeholder-neutral-400
+    dark:placeholder-neutral-500
+  "
+  />
 
-              <button onClick={sendMessage}>
-                Send
-              </button>
+  <button
+    onClick={sendMessage}
+    className="
+    ml-3
+    text-xs md:text-sm
+    opacity-70
+    hover:opacity-100
+    dark:text-[#eee]
+  "
+  >
+    →
+  </button>
 
-            </div>
+</div>
 
           </div>
 
