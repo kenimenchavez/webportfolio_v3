@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -14,7 +15,6 @@ function App() {
   return (
     <main className="min-h-[100dvh] flex flex-col justify-between px-6 py-10">
 
-      {/* Center Content */}
       <div className="flex flex-1 items-start md:items-center justify-center">
         <div className="max-w-xl">
 
@@ -64,6 +64,8 @@ function App() {
         </div>
       </div>
 
+      <Chatbot />
+      
       <footer className="w-full max-w-xl mx-auto flex items-center justify-between text-xs md:text-sm mt-10">
         <span>© 2026 Keni</span>
 
